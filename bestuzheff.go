@@ -9,7 +9,7 @@ import (
 
 func indexpage(w http.ResponseWriter, r *http.Request) {
 
-	pageBody, err := ioutil.ReadFile("index.html")
+	pageBody, err := ioutil.ReadFile("/root/index.html")
 
 	if err != nil {
 		fmt.Fprintf(w, err.Error())
